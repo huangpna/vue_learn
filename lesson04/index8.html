@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index8</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<div id="app8">
+    <div id="_red" @click.self="doThat1(event)" style="width: 500px;height: 500px;background: red;">
+        <div @click="doThat(event)" id="_blue" style="width: 200px;height: 200px;background: blue;"></div>
+    </div>
+</div>
+</body>
+<script src="../js/vue.min.js"></script>
+<script>
+    /**
+     *事件处理方法 --  事件修饰符
+     * .self与.stop看起来有点像 但是他们的作用却不同
+     * 前者是防止事件冒泡，后者则是忽略了事件冒泡和事件捕获的影响。只有直接作用在 该元素上“自身”的事件才会被调用
+     * .self  只执行直接作用在该元素身上的事件，所以它相当于忽略了 其他元素的冒泡或者捕获事件。但是这种忽略只局限于自身
+     * 所以，为了避免一些会被冒泡事件影响，加上修饰符.self是很有用的
+     * */
+    var vm = new Vue({
+        el:'#app8',
+        methods: {
+            doThat: function (e) {
+               console.log(e.target);
+
+            },
+            doThat1: function (e) {
+                console.log(e.target);
+
+            }
+        }
+    });
+</script>
+</html>

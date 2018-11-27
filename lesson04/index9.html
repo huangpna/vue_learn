@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index9</title>
+    <style>
+        #app9>div{
+            text-align:center;
+            width:800px;
+            height:200px;
+            background-color: blue;
+            color:#FFF;
+            font-size:20px;
+            margin:0 auto;
+        }
+        #app9>div>a{
+            text-align:center;
+            width:200px;
+            height:50px;
+            background-color: red;
+            display: block;
+            color:#FFF;
+            font-size:20px;
+            margin:0 auto;
+        }
+        #app9>div>a>div{
+            text-align:center;
+            width:200px;
+            height:50px;
+            background-color: yellow;
+            color:#FFF;
+            font-size:20px;
+            margin:40px auto 0;
+        }
+    </style>
+</head>
+<body>
+<div id="app9">
+   <div @click="say1">
+       1
+       <a href="https://www.baidu.com/" @click.self.prevent="say2">
+           2
+            <div @click="say3">
+                3
+            </div>
+       </a>
+   </div>
+</div>
+</body>
+<script src="../js/vue.min.js"></script>
+<script>
+
+    /**
+     * 事件处理方法 --  事件修饰符
+    * 文档中的疑问？
+     * 使用修饰符时，顺序很重要；相应的代码会以同样的顺序产生。因此，用 v-on:click.prevent.self 会阻止所有的点击，而 v-on:click.self.prevent 只会阻止对元素自身的点击。
+     * 当对a标签使用.prevent.self,此时点击div不仅不会冒泡，也不会跳转 结果：3、1  ---   会阻止所有的点击
+     *  当对a标签使用.self.prevent,此时点击div,输出结果：3、1,此时不会冒泡，但是会跳转
+    * */
+    var vm = new Vue({
+        el:'#app9',
+        methods: {
+            say1:function () {
+              alert(1);
+            },
+            say2:function () {
+                alert(2);
+            },
+            say3:function () {
+                alert(3);
+            }
+        }
+    });
+</script>
+</html>

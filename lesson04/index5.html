@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index5</title>
+</head>
+<body>
+<div id="app5">
+   <a href="https://www.baidu.com/" @click.prevent="sayHi">点击看看是否跳转</a>
+</div>
+</body>
+<script src="../js/vue.min.js"></script>
+<script>
+    /**
+     *事件处理方法 --  事件修饰符
+     * .prevent 阻止表单默认提交事件 --- 不再重载页面
+     * */
+    var vm = new Vue({
+        el:'#app5',
+        methods: {
+            sayHi:function () {
+               console.log('已组织默认事件---未跳转');
+            }
+        }
+    });
+</script>
+</html>

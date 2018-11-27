@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index4</title>
+    <style>
+        #app4>div{
+            width:200px;
+            height:150px;
+            background-color: blue;
+        }
+        #app4>div>div{
+            width:100px;
+            height:50px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+<div id="app4">
+    <div @click="sayHello('说hello')">
+        <div @click.stop="sayHi('您好')">说您好</div>
+        <br/>
+    </div>
+</div>
+</body>
+<script src="../js/vue.min.js"></script>
+<script>
+    /**
+     *事件处理方法 --  事件修饰符
+     * .stop 阻止事件冒泡
+     * */
+    var vm = new Vue({
+        el:'#app4',
+        data:{
+            text:'11111'
+        },
+        methods:{
+            sayHi:function (msg) {
+                alert(msg);
+            }
+        }
+    });
+</script>
+</html>

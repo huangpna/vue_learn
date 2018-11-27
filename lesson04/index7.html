@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index7</title>
+    <style>
+        #obj1,#obj2,#obj3,#obj4{
+            width: 300px;
+            height:200px;
+            margin-top:50px;
+        }
+        #obj1{
+            background: deeppink;
+        }
+        #obj2{
+            background: pink;
+        }
+        #obj3{
+            background: hotpink;
+        }
+        #obj4{
+             background: #ff4225;
+        }
+    </style>
+</head>
+<body>
+<div id="app7">
+    <div id="obj1" @click.capture="doc">
+        obj1
+        <div id="obj2" @click.capture="doc">
+            obj2
+            <div id="obj3" @click="doc">
+                obj3
+                <div id="obj4" @click="doc">
+                    obj4  <h2>请点击我，注意弹出的顺序</h2>
+                    <!--。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。点击obj4的时候，弹出的顺序为：obj1、obj2、obj4、obj3；
+                    由于1，2有修饰符，故而先触发事件，然后就是4本身触发，最后冒泡事件。
+                    -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="../js/vue.min.js"></script>
+<script>
+    /**
+     *事件处理方法 --  事件修饰符
+     * 添加事件侦听器时使用 capture 模式
+     * 即元素自身触发的事件先在此处理，然后才交由内部元素进行处理
+     * .capture
+     * */
+    var vm = new Vue({
+        el:'#app7',
+        data:{
+            id:''
+        },
+        methods: {
+            doc: function () {
+                this.id= event.currentTarget.id;
+                alert(this.id)
+            }
+        }
+    });
+</script>
+</html>

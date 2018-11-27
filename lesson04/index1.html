@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index1</title>
+</head>
+<body>
+<div id="app1">
+        <button @click="sayHi">点击一下</button>
+</div>
+</body>
+<script src="../js/vue.min.js"></script>
+<script>
+    /**
+     *事件处理方法 --  vue简单方法实现
+    * */
+    var vm = new Vue({
+        el:'#app1',
+        methods:{
+            sayHi:function () {
+                alert("我被点击了");
+            }
+        }
+    });
+</script>
+</html>

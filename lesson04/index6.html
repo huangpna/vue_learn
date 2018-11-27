@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index6</title>
+    <style>
+        #app6>div{
+            width:200px;
+            height:150px;
+            background-color: blue;
+        }
+        #app6>div>a{
+            width:100px;
+            height:50px;
+            background-color: red;
+            color:#FFF;
+        }
+    </style>
+</head>
+<body>
+<div id="app6">
+    <div @click="sayHello">
+        <a href="https://www.baidu.com/" @click.prevent.stop="sayHi">点击看看是否跳转</a>
+    </div>
+</div>
+</body>
+<script src="../js/vue.min.js"></script>
+<script>
+    /**
+     *事件处理方法 --  事件修饰符
+     * .prevent 阻止表单默认提交事件 --- 不再重载页面
+     * .stop   阻止事件冒泡
+     * 事件串联
+     * */
+    var vm = new Vue({
+        el:'#app6',
+        methods: {
+            sayHi:function () {
+                alert("说hi")
+            },
+            sayHello:function () {
+                alert("说hello")
+            }
+        }
+    });
+</script>
+</html>
