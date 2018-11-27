@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index8</title>
+</head>
+<body>
+<div id="app8">
+    <p v-bind:style="[baseStyles,overridingStyles]">我是文字</p>
+</div>
+</body>
+<script src="../js/vue.min.js"></script>
+<script>
+    /**
+     * 用数组对象混合的方式 ---- 绑定内联样式
+     * */
+    var vm = new Vue({
+        el:'#app8',
+        data:{
+            baseStyles:{
+                color:'#FFF',
+                fontSize:'25px'
+            },
+            overridingStyles:{
+                backgroundColor:'blue'
+            }
+        }
+    });
+</script>
+</html>

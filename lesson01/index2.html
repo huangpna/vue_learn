@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index2</title>
+</head>
+<body>
+    <div id="app2">
+        <p v-bind:class="classObj">我是文字</p>
+    </div>
+</body>
+<script src="../js/vue.min.js"></script>
+<script>
+    /**
+     * 对象语法 ---- 绑定class
+     * 方法二
+     * */
+    var vm = new Vue({
+        el:'#app2',
+        data:{
+            classObj:{
+                name1:true,
+                name2:false
+            }
+        }
+    });
+</script>
+</html>

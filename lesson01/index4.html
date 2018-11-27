@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index4</title>
+</head>
+<body>
+<div id="app4">
+    <p v-bind:class="[class1,isShow ? class2 : '']">我是文字</p>
+</div>
+</body>
+<script src="../js/vue.min.js"></script>
+<script>
+    /**
+     * 数组语法 ---- 绑定class
+     * 方法二
+     * */
+    var vm = new Vue({
+        el:'#app4',
+        data:{
+            class1:'name1',
+            class2:'name2',
+            isShow:false
+        }
+    });
+</script>
+</html>

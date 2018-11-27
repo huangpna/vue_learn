@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index7</title>
+</head>
+<body>
+<div id="app7">
+    <p v-bind:style="objStyle">我是文字</p>
+</div>
+</body>
+<script src="../js/vue.min.js"></script>
+<script>
+    /**
+     * 对象语法 ---- 绑定内联样式
+     * */
+    var vm = new Vue({
+        el:'#app7',
+        data:{
+            objStyle:{
+                color:'red',
+                fontSize:'18px'
+            }
+        }
+    });
+</script>
+</html>

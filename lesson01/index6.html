@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index6</title>
+</head>
+<body>
+<div id="app6">
+    <p v-bind:style="{color:activeColor,fontSize:fontSize + 'px'}">我是文字</p>
+</div>
+</body>
+<script src="../js/vue.min.js"></script>
+<script>
+    /**
+     * 对象语法 ---- 绑定内联样式
+     * */
+    var vm = new Vue({
+        el:'#app6',
+        data:{
+            activeColor:'red',
+            fontSize:18
+        }
+    });
+</script>
+</html>
