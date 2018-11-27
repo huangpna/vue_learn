@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index2</title>
+</head>
+<body>
+<div id="app2">
+    <template v-if="isShow">
+        <div>显示1</div>
+        <div>显示2</div>
+        <div>显示3</div>
+        <div>显示4</div>
+    </template>
+    <div>
+        显示5
+    </div>
+</div>
+</body>
+<script src="../js/vue.min.js"></script>
+<script>
+    /**
+     * 条件渲染----在 <template> 元素上使用 v-if 条件渲染分组
+     * */
+    var vm = new Vue({
+        el:'#app2',
+        data:{
+           isShow:true
+        }
+    });
+</script>
+</html>

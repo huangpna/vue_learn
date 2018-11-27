@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index1</title>
+</head>
+<body>
+<div id="app1">
+    <h1 v-if="isShow">显示1</h1>      <!--if--else--单个元素-->
+    <h1 v-else>显示2</h1>
+</div>
+</body>
+<script src="../js/vue.min.js"></script>
+<script>
+    /**
+     * 条件渲染  v-if v-else
+     * */
+    var vm = new Vue({
+        el:'#app1',
+        data:{
+            isShow:false
+        }
+    });
+</script>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index3</title>
+</head>
+<body>
+<div id="app3">
+    <h1 v-if="type == 1">显示1</h1>
+    <h1 v-else-if="type == 2">显示2</h1>
+    <h1 v-else-if="type == 3">显示3</h1>
+    <h1 v-else>显示4</h1>
+</div>
+</body>
+<script src="../js/vue.min.js"></script>
+<script>
+    /**
+     * 条件渲染----v-else-if
+     * */
+    var vm = new Vue({
+        el:'#app3',
+        data:{
+            type:2
+        }
+    });
+</script>
+</html>

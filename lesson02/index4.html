@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index4</title>
+</head>
+<body>
+<div id="app4">
+   <div v-show="isShow">
+       显示文本
+   </div>
+</div>
+</body>
+<script src="../js/vue.min.js"></script>
+<script>
+    /**
+     * 条件渲染----v-show
+     * */
+    var vm = new Vue({
+        el:'#app4',
+        data:{
+            isShow:true     //切换isShow的值（布尔值）
+        }
+    });
+</script>
+</html>
