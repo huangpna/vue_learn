@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index3</title>
+    <style>
+        li{
+            font-size:25px;
+            list-style:none;
+        }
+    </style>
+</head>
+<body>
+<div id="app2">
+    <ul>
+        <li v-for="(item,key,index) in listData">    <!--第二个参数为键名 第三个参数为索引-->
+            <span>{{key}}:</span>
+            <span>{{item}}</span>
+        </li>
+    </ul>
+</div>
+</body>
+<script src="../js/vue.min.js"></script>
+<script>
+    /**
+     * 列表渲染 -- 用v-for指令渲染列表  ---一个对象的v-for
+     * 注意：渲染时也可以用of替代in
+     *
+     * */
+    var vm = new Vue({
+        el:'#app2',
+        data:{
+            listData: {
+                firstName: 'John',
+                lastName: 'Doe',
+                age: 30
+            }
+
+        }
+    });
+</script>
+</html>

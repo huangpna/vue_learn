@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index4</title>
+    <style>
+        li{
+            font-size:25px;
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+<div id="app4">
+    <ul>
+        <li v-for="item in listData" :key="item.id">{{item.message}}</li>
+    </ul>
+</div>
+</body>
+<script src="../js/vue.min.js"></script>
+<script>
+    /**
+     * 列表渲染 -- 有时候数组数据变化,页面所有DOM都需要重新渲染,这样会增加渲染时间,但是track-by可以定义哪些DOM被复用,使Vue.js 因而能尽可能地复用已有实例
+     * 但是只适用于不依赖子组件状态或临时 DOM 状态 (例如：表单输入值) 的列表渲染输出,所以为每项提供一个唯一 key 属性，表示给vue一个提示
+    *
+    * */
+    var vm = new Vue({
+        el:'#app4',
+        data:{
+            listData: [
+                { id:1 , message: 'Foo' },
+                {id:2, message: 'Bar' }
+            ]
+        }
+    });
+</script>
+</html>
