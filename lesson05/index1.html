@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index1</title>
+</head>
+<body>
+<!--表单输入验证-->
+    <div id="app1">
+        <!--文本-->
+        <input type="text" placeholder="a line text" v-model="msg"/><br/><br/>
+        <!--多行文本-->
+        <textarea placeholder="more line text" v-model="msg"></textarea><br/><br/>
+        <!--复选框-->
+        <!--单个-->
+        <input type="checkbox" placeholder="请选择" v-model="isSeleted"/>
+        <label>{{isSeleted}}</label>
+        <!--多个-->
+        <div>
+            <input type="checkbox" placeholder="请选择" id="jack" value="Jack" v-model="data"/>
+            <label for="jack">Jack</label><br/><br/>
+            <input type="checkbox" placeholder="请选择"  id="John" value="John" v-model="data"/>
+            <label for="John">John</label><br/><br/>
+            <input type="checkbox" placeholder="请选择" id="Mike" value="Mike" v-model="data"/>
+            <label for="Mike">Mike</label><br/><br/>
+            <span>{{data}}</span>
+        </div>
+        <!--单选按钮-->
+        <div>
+            <input type="radio" placeholder="请选择" id="three" value="three" v-model="data1"/>
+            <label for="three">three</label><br/><br/>
+            <input type="radio" placeholder="请选择"  id="two" value="two" v-model="data1"/>
+            <label for="two">two</label><br/><br/>
+            <input type="radio" placeholder="请选择" id="one" value="one" v-model="data1"/>
+            <label for="one">one</label><br/><br/>
+            <span>{{data1}}</span>
+        </div><br/>
+        <!--选择框-->
+        <!--单选-->
+        <div>
+            <select v-model="data2">
+                <option disabled value="">请选择</option>
+                <option>A</option>
+                <option>B</option>
+                <option>C</option>
+            </select><br/>
+            <span style="border:1px solid red;height:50px;width:100px;display: inline-block">{{data2}}</span>
+        </div><br/>
+        <!--多选-->
+        <div>
+            <select v-model="data3" multiple>
+                <option disabled value="">请选择</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+            </select><br/>
+            <span style="border:1px solid red;height:50px;width:100px;display: inline-block">{{data3}}</span>
+        </div><br/>
+        <!--用v-for渲染的动态选项-->
+        <div>
+            <select v-model="data4">
+                <option disabled value="">请选择</option>
+                <option v-for="item in dataList" :value="item.value">{{item.text}}</option>
+            </select><br/>
+            <span style="border:1px solid red;height:50px;width:100px;display: inline-block">{{data4}}</span>
+        </div>
+    </div>
+</body>
+<script src="../js/vue.min.js"></script>
+<script>
+    var vm = new Vue({
+        el:"#app1",
+        data:{
+            msg:'45545',
+            isSeleted:false,
+
+            data:[],
+            data1:[],
+            data2:'',
+            data3:[],
+            dataList:[{
+                value:'aaaaa',
+                text:'sfgdghdhdfh'
+            },
+                {
+                    value:'bbbb',
+                    text:'csafasfsaf'
+
+                },
+                {
+                    value:'ccccc',
+                    text:'57977'
+
+                }],
+            data4:[]
+        },
+        methods:{
+
+        }
+    })
+</script>
+</html>
