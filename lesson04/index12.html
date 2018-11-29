@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index12</title>
+</head>
+<body>
+<div id="app12">
+    <p>监听keycode为13的键：<input  type="text" @keyup.13="submit"></p>
+    <p>监听enter键：<input type="text" @keyup.enter="submit1"></p>
+    <p>监听delete 键：<input type="text" @keyup.delete ="submit2"></p> <!-- 捕获删除和退格-->
+    <p>监听esc键：<input type="text" @keyup.esc ="submit3"></p>
+    <p>监听up键：<input type="text" @keyup.up ="submit4"></p> <!--箭头朝上-->
+    <p>监听down键：<input type="text" @keyup.down ="submit5"></p>
+    <p>监听left键：<input type="text" @keyup.left ="submit6"></p>
+    <p>监听right键：<input type="text" @keyup.right ="submit7"></p>
+    <p>监听space键：<input type="text" @keyup.space ="submit8"></p> <!--空格-->
+    <p>监听tab键：<input type="text" @keyup.tab.prevent ="submit9"></p>   <!--当从其他地方按下tab键跳到此处时触发事件-->
+    <!--自定义按键修饰符别名-->
+    <p>自定义按键修饰符别名<input type="text" @keyup.ctr="submit10" @keydown="getCode"/></p>
+</div>
+</body>
+<script src="../js/vue.min.js"></script>
+<script>
+    /*
+    * 键盘监听事件
+    * 监听keycode为13的
+    * 
+    * */
+    window.onload=function () {
+//        Vue.config.keyCodes.ctr=17;
+        Vue.config.keyCodes = {
+            ctr:17,
+            a:65,
+            b:66
+        };
+        var vm = new Vue({
+            el: '#app12',
+            data: {},
+            methods: {
+                /*实例 不用过多在意*/
+                submit: function () {
+                    console.log("1111");
+                },
+                submit1: function () {
+                    console.log("22222");
+                },
+                submit2: function () {
+                    console.log("3333");
+                },
+                submit3: function () {
+                    console.log("4444");
+                },
+                submit4: function () {
+                    console.log("5555");
+                },
+                submit5: function () {
+                    console.log("6666");
+                },
+                submit6: function () {
+                    console.log("5555");
+                },
+                submit7: function () {
+                    console.log("6666");
+                },
+                submit8: function () {
+                    console.log("7777");
+                },
+                submit9: function () {
+                    console.log("8888");
+                },
+                submit10: function () {
+                   alert("改变了");
+                },
+                getCode:function (e) {
+                    console.log(e.keyCode);
+                }
+            }
+        });
+    };
+</script>
+</html>

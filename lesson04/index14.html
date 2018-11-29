@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index14</title>
+</head>
+<body>
+    <div id="app14">
+        <!--点击鼠标左键触发事件：-->
+        <div @click.left="divEvent">25555</div>
+        <!--点击鼠标右键触发事件：-->
+        <div @click.right="divEvent1">5566999</div>
+        <!--点击鼠标滚轮触发事件：-->
+        <div @click.middle="divEvent2">5566666</div>
+    </div>
+</body>
+<script src="../js/vue.min.js"></script>
+<script>
+    var vm = new Vue({
+       el:'#app14',
+       data:{
+
+       },
+        methods:{
+            divEvent:function () {
+               console.log("1111");
+            },
+            divEvent1:function () {
+                console.log("22222");
+            },
+            divEvent2:function () {
+                console.log("33333");
+            }
+        }
+    });
+</script>
+</html>

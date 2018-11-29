@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index13</title>
+    <style>
+        .container{
+            width:500px;
+            height:50px;
+            border:1px solid red;
+        }
+    </style>
+</head>
+<body>
+<div id="app13">
+    <!--系统修饰键-->
+    <!-- Alt + C -->
+    <input @keyup.alt.67="clear">
+    <!-- Ctrl + Click --> <!--Alt 或 Shift 被一同按下时也会触发-->
+    <div class="container" @click.ctrl="doSomething">Do something</div>
+    <div class="container" @click.keyup.17="doSomething1">Do something1111</div>
+    <!--控制系统修饰键的精确性  有且只有ctrl+Click键能够触发-->
+    <button @click.ctrl.exact="onCtrlClick">A</button>
+</div>
+</body>
+<script src="../js/vue.min.js"></script>
+<script>
+    /**
+    * 请注意修饰键与常规按键不同，在和 keyup 事件一起用时，事件触发时修饰键必须处于按下状态。换句话说，只有在按住 ctrl 的情况下释放其它按键，
+     * 才能触发 keyup.ctrl。而单单释放 ctrl 也不会触发事件。如果你想要这样的行为，请为 ctrl 换用 keyCode：keyup.17。
+    *
+    * */
+    var vm = new Vue({
+        el:'#app13',
+        data:{
+
+        },
+        methods:{
+            clear:function () {
+                console.log("按下相应键才会触发鼠标和键盘事件的监听器Alt + C");
+            },
+            doSomething:function () {
+                console.log("按下相应键才会触发鼠标和键盘事件的监听器Ctrl + Click");
+            },
+            doSomething1:function () {
+                console.log("1111");
+            },
+            onClick:function () {
+                console.log("触发了");
+            },
+            onCtrlClick:function () {
+                console.log("精确触发");
+            }
+        }
+    });
+</script>
+</html>

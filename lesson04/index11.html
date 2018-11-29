@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index11</title>
+</head>
+<body>
+    <div id="app11">
+        <input @keydown="show($event)">
+    </div>
+</body>
+<script src="../js/vue.min.js"></script>
+<script>
+    /*
+    * 查看对应keyCode码
+    * */
+    var vm = new Vue({
+       el:'#app11',
+       data:{
+
+       },
+        methods:{
+            show:function (e) {
+               console.log(e.keyCode);
+            }
+        }
+    });
+</script>
+</html>
