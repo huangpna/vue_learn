@@ -6,14 +6,11 @@
 </head>
 <body>
 <div id="app8">
-    <p v-bind:style="[baseStyles,overridingStyles]">我是文字</p>
+    <p v-bind:style="[baseStyles,overridingStyles]">我是文字</p> <!--用数组和对象混合的方式实现style绑定-->
 </div>
 </body>
 <script src="../js/vue.min.js"></script>
 <script>
-    /**
-     * 用数组对象混合的方式 ---- 绑定内联样式
-     * */
     var vm = new Vue({
         el:'#app8',
         data:{

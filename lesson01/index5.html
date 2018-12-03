@@ -6,14 +6,11 @@
 </head>
 <body>
 <div id="app5">
-    <p v-bind:class="[class1,{class2:isShow}]">我是文字</p>
+    <p v-bind:class="[class1,{class2:isShow}]">我是文字</p>  <!--数组和对象混合的方式-->
 </div>
 </body>
 <script src="../js/vue.min.js"></script>
 <script>
-    /**
-     * 用数组对象混合的方式 ---- 绑定class
-     * */
     var vm = new Vue({
         el:'#app5',
         data:{

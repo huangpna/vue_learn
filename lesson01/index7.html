@@ -6,14 +6,11 @@
 </head>
 <body>
 <div id="app7">
-    <p v-bind:style="objStyle">我是文字</p>
+    <p v-bind:style="objStyle">我是文字</p> <!--用对象的方式实现style绑定-->
 </div>
 </body>
 <script src="../js/vue.min.js"></script>
 <script>
-    /**
-     * 对象语法 ---- 绑定内联样式
-     * */
     var vm = new Vue({
         el:'#app7',
         data:{

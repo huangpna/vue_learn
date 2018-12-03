@@ -2,19 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>index3</title>
+    <title>class与style绑定</title>
 </head>
 <body>
 <div id="app3">
-    <p v-bind:class="[class1,class2]">我是文字</p>
+    <p v-bind:class="[class1,class2]">我是文字</p> <!--用数组的方式绑定class-->
 </div>
 </body>
 <script src="../js/vue.min.js"></script>
 <script>
-    /**
-     * 数组语法 ---- 绑定class
-     * 方法一
-     * */
     var vm = new Vue({
         el:'#app3',
         data:{

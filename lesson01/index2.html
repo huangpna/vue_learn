@@ -2,19 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>index2</title>
+    <title>class与style绑定</title>
 </head>
 <body>
     <div id="app2">
-        <p v-bind:class="classObj">我是文字</p>
+        <p v-bind:class="classObj">我是文字</p> <!--方法二：对象绑定class-->
     </div>
 </body>
 <script src="../js/vue.min.js"></script>
 <script>
-    /**
-     * 对象语法 ---- 绑定class
-     * 方法二
-     * */
     var vm = new Vue({
         el:'#app2',
         data:{
