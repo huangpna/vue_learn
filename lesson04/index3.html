@@ -6,7 +6,7 @@
 </head>
 <body>
 <div id="app3">
-    <button @click="sayHi('我被点击了',$event)">说我被点击了</button>
+    <button @click="sayHi('我被点击了',$event)">说我被点击了</button>  <!--这里使用@-->
     <div style="height: 100px;width: 100px;background-color: red;" @mouseover="over('鼠标从我上面滑过',$event)">
         鼠标从我上面滑过试试
     </div>
@@ -14,17 +14,14 @@
 </body>
 <script src="../js/vue.min.js"></script>
 <script>
-    /**
-     *事件处理方法 --  访问原生DOM事件
-     * */
     var vm = new Vue({
         el:'#app3',
-        methods:{
+        methods:{     //这里使用methods
             sayHi:function (msg,$event) {
-                alert(msg+$event);
+                alert(msg+$event);  //弹出我被点击了,事件是[object MouseEvent]
             },
             over:function (msg,$event) {
-                alert(msg+$event);
+                alert(msg+$event); //弹出鼠标从我上面滑过,事件是[object MouseEvent]
             }
         }
     });

@@ -6,16 +6,13 @@
 </head>
 <body>
 <div id="app4">
-   <div v-show="isShow">
-       显示文本
-   </div>
+    <div v-show="isShow">   <!--注意：v-show不支持<template>元素，也不支持v-else-->
+        显示文本
+    </div>
 </div>
 </body>
 <script src="../js/vue.min.js"></script>
 <script>
-    /**
-     * 条件渲染----v-show
-     * */
     var vm = new Vue({
         el:'#app4',
         data:{

@@ -6,7 +6,7 @@
 </head>
 <body>
 <div id="app2">
-    <template v-if="isShow">
+    <template v-if="isShow"> <!--if...else... 用template实现多个元素-->
         <div>显示1</div>
         <div>显示2</div>
         <div>显示3</div>
@@ -19,9 +19,6 @@
 </body>
 <script src="../js/vue.min.js"></script>
 <script>
-    /**
-     * 条件渲染----在 <template> 元素上使用 v-if 条件渲染分组
-     * */
     var vm = new Vue({
         el:'#app2',
         data:{

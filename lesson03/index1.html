@@ -12,21 +12,24 @@
 </head>
 <body>
 <div id="app1">
+    <!--v-for循环数组-->
     <ul>
         <li v-for="item in listData">{{item.message}}</li>
+    </ul>
+    <ul>
+        <li v-for="(item,index) in listData">  <!--第二个参数：可选参数，index:当前项的索引-->
+            <span>{{index}}</span>
+            <span>{{item.message}}</span>
+        </li>
     </ul>
 </div>
 </body>
 <script src="../js/vue.min.js"></script>
 <script>
-    /**
-     * 列表渲染 -- 用v-for指令渲染列表
-     * 注意：渲染时也可以用of替代in
-     * */
     var vm = new Vue({
         el:'#app1',
         data:{
-            listData: [
+            listData: [   /*注意：listData是一个数组*/
                 { message: 'Foo' },
                 { message: 'Bar' }
             ]

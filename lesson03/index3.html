@@ -12,6 +12,7 @@
 </head>
 <body>
 <div id="app2">
+    <!--v-for循环对象-->
     <ul>
         <li v-for="(item,key,index) in listData">    <!--第二个参数为键名 第三个参数为索引-->
             <span>{{key}}:</span>
@@ -22,11 +23,6 @@
 </body>
 <script src="../js/vue.min.js"></script>
 <script>
-    /**
-     * 列表渲染 -- 用v-for指令渲染列表  ---一个对象的v-for
-     * 注意：渲染时也可以用of替代in
-     *
-     * */
     var vm = new Vue({
         el:'#app2',
         data:{

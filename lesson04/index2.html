@@ -6,15 +6,12 @@
 </head>
 <body>
 <div id="app2">
-    <button @click="sayHi('我被点击了')">说我被点击了</button>
+    <button @click="sayHi('我被点击了')">说我被点击了</button>   <!--事件传参-->
     <button @click="sayHi('您好')">说您好</button>
 </div>
 </body>
 <script src="../js/vue.min.js"></script>
 <script>
-    /**
-     *事件处理方法 --  vue方法传参
-     * */
     var vm = new Vue({
         el:'#app2',
         methods:{
