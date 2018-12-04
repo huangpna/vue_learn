@@ -13,22 +13,26 @@
         <input type="radio" id="huahua1" v-model.lazy="msg" value="小花花1">
         <label for="huahua1">小花花1</label>
         <span>{{msg}}</span>
+
+
         <div>
             <!--将用户输入的值转化为数值类型-->
             <input type="text" v-model.number="age">
             {{typeof age}}<br/>
-            <!--自动过滤空白字符-->
+            <!--自动过滤首尾空白字符-->
             <input type="text" v-model.trim="asd">
             {{asd}}<br/>
         </div>
+
+
     </div>
 </body>
 <script src="../js/vue.min.js"></script>
 <script>
     /**
-     * .lazy
-     * .number 将用户输入的值转化为数值类型
-     * .trim 自动过滤空白字符
+     * .lazy   在“change”时而非“input”时更新
+     * .number 将用户输入的值转化为数值类型(number)
+     * .trim   自动过滤首尾空白字符
      * */
     var vm = new Vue({
         el:'#app2',
