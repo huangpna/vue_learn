@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>app3</title>
+</head>
+<body>
+    <div id="app3">
+        <div>
+            <span>输入框1: </span>
+            <input v-model="searchText">
+        </div>
+        <!--等价于-->
+        <custom-input v-bind:value="searchText" v-on:input="getInputV"></custom-input>
+    </div>
+</body>
+<script src="../js/vue.min.js"></script>
+<script>
+    Vue.component('custom-input',{
+        props:['value'],
+        template:`<div><span>输入框2: </span><input v-bind:value="value" v-on:input="$emit('input',$event.target.value)"></div>`
+    });
+    new Vue({
+        el:'#app3',
+        data:{
+            searchText:''
+        },
+        methods:{
+            getInputV:function (v) {
+                let _this = this;
+                _this.searchText = v;
+            }
+        }
+    })
+</script>
+</html>

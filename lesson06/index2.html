@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>app2</title>
+    <style>
+        #app2>div>div{
+            width:800px;
+            height:160px;
+            background-color: #ff4225;
+            text-align:center;
+            line-height:160px;
+            margin:0 auto  20px;
+        }
+    </style>
+</head>
+<body>
+<div id="app2">
+    <div :style="{fontSize:postFontSize + 'px'}">   <!--它可以在模板中用来控制所有博文的字号-->
+        <my-content v-for="item in dataList" v-on:enlarge-text="changeFontSize" v-bind:num="item.id" v-bind:title="item.title"></my-content>
+    </div>                                     <!--注意：然后我们用v-on 在博文组件上监听这个事件-->
+</div>
+</body>
+<script src="../js/vue.min.js"></script>
+<script>
+    Vue.component('my-content',{
+        props:['title','num'],
+        data:function () {
+
+        },                                                                                  //但是有的时候我们需要抛出一个特定的值，可以通过$emit的第二个值
+        template:`<div>{{title}}------{{num}}------<button v-on:click="$emit('enlarge-text',0.5)">点击放大字体</button></div>`  //现在我们需要给每篇博文添加一个按钮来放大字号
+    });           //注意：这个时候如果说我们需要点击这个按钮，需要调用内容的$emit方法并列入事件的名称来向父级组件触发一个事件
+    new Vue({
+        el:'#app2',
+        data:{
+            dataList: [
+                { id: 1, title: '博文组件' },
+                { id: 2, title: '博文组件' },
+                { id: 3, title: '博文组件' }
+            ],
+            postFontSize: 20     //添加一个postFontSize数据属性来支持这个功能
+        },
+        methods:{
+            changeFontSize:function ($event) {  //那么这个值将作为一个参数传入这个方法
+                let _this = this;
+                _this.postFontSize += $event;
+            }
+        }
+    });
+</script>
+</html>

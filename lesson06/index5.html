@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index5</title>
+    <style>
+        .tab-button:hover{
+            background: red;
+        }
+        #app5>.active{
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="app5">
+        <button v-for="item in navs" v-bind:key="item"  v-bind:class="['tab-button',{active:item === currentTab}]" v-on:click="tab(item)">
+            {{item}}
+        </button>
+        <!-- 组件会在 `currentTabComponent` 改变时改变 -->
+        <component v-bind:is="currentTabComponent"></component>
+    </div>
+</body>
+<script src="../js/vue.min.js"></script>
+<script>
+    Vue.component('my-home',{
+        template:'<div>Archive component111111</div>'
+    });
+    Vue.component('my-posts',{
+        template:'<div>Archive component222222</div>'
+    });
+    Vue.component('my-archive',{
+        template:'<div>Archive component333333</div>'
+    });
+    new Vue({
+        el:'#app5',
+        data:{
+            currentTab:'Home',
+            navs:['Home','Posts','Archive']
+        },
+        methods:{
+            tab:function (v) {
+                let _this = this;
+                _this.currentTab = v;
+            }
+        },
+        computed:{
+            currentTabComponent:function () {
+                let _this = this;
+                return 'my-'+ _this.currentTab.toLowerCase();
+            },
+        }
+    })
+</script>
+</html>

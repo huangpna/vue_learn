@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>app1</title>
+</head>
+<body>
+    <div id="app1">
+        <button-counter title="My journey with Vue"></button-counter> <!--注意：点击按钮时，每个组件都会各自独立维护它的 count。因为你每用一次组件，就会有一个它的新实例被创建。-->
+        <button-counter title="Blogging with Vue"></button-counter>
+        <button-counter title="Why Vue is so fun"></button-counter>
+    </div>
+</body>
+<script src="../js/vue.min.js"></script>
+<script>
+    Vue.component('button-counter',{   //全局注册一个组件
+        props:['title'],
+        data:function () {
+            return {
+                count:0
+            }
+        },
+        template:'<div><button @click="count++">点击一下</button>&nbsp;&nbsp;&nbsp;&nbsp;<span v-if="count == 1">{{title}}</span></div>'
+    });
+    new Vue({el:'#app1'}); //创建一个vue实例
+</script>
+</html>
