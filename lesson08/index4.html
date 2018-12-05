@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index4</title>
+</head>
+<body>
+    <div id="app4">
+        <my-component  v-bind:prop-a="12" v-bind:prop-b="'sfsfs'" v-bind:prop-c="'sdfsf'" v-bind:prop-d="45"
+                       v-bind:prop-e="{a:'a'}" v-bind:prop-f="100"></my-component>
+    </div>
+</body>
+<script src="../js/vue.js"></script>
+<script>
+    /**
+    * 注意：这里踩了一个非常大的坑，应该说很无语的坑,在深入了解prop的时候该报错的时候总是没有报错，最开始还以为是自己理解错了，最后看到一篇文章，才想到最初看到的vue安装时看到的如果开发是
+     * 生产版本会自动所有常见错误相关的警告!哎
+    * */
+    Vue.component('my-component',{
+        props:{
+            // 基础类型检测 (`null` 意思是任何类型都可以)
+            propA:Number,
+            // 多种类型
+            propB:[String, Number],
+            // 必填的字符串
+            propC:{
+                type:String,
+                required:true
+            },
+            // 带有默认值的数字
+            propD: {
+                type: Number,
+                default: 100
+            },
+            //带有默认值的对象
+            propE:{
+                type:Object,
+                default:function () {
+                    return {message:'hello'}
+                }
+            },
+            // 自定义验证函数
+            propF:{
+                validator:function (value) {
+                    return value > 10
+                }
+            }
+        },
+        template:'<div><p>{{propA}}</p><p>{{propB}}</p><p>{{propC}}</p><p>{{propD}}</p><p>{{propE}}</p><p>{{propF}}</p></div>'
+    });
+    new Vue({
+        el:'#app4'
+    })
+</script>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index3</title>
+</head>
+<body>
+    <div id="app3">
+        <!--传入一个数字-->
+        <component-a v-bind:num="42"></component-a>
+        <component-a v-bind:num="postsA.a"></component-a>       <!--用一个变量进行动态赋值-->
+        <!--传入一个布尔值-->
+        <component-b bool></component-b>   <!--该 prop 没有值的情况在内，都意味着 `true`-->
+        <component-b v-bind:bool="false"></component-b>
+        <component-b v-bind:bool="postsB.a"></component-b>
+        <!--传入一个数组-->
+        <component-c v-bind:arr="[221,225,220]"></component-c>
+        <component-c v-bind:arr="postsC.a"></component-c>
+        <!--传入一个对象-->
+        <component-d v-bind:obj="{title:'标题1',content:'内容1'}"></component-d>
+        <component-d v-bind:obj="postsD.a"></component-d>
+        <!--传入一个对象的所有属性-->
+        <component-e v-bind:obj1="postE"></component-e>
+        <!--等价于-->
+        <!--<component-e-->
+                <!--v-bind:id="postE.id"-->
+                <!--v-bind:title="postE.title"-->
+                <!--v-bind:content="postE.content"-->
+        <!--&gt;</component-e>-->
+    </div>
+</body>
+<script src="../js/vue.min.js"></script>
+<script>
+    /**
+    * 注意：即便你传入的值是静态的，我们仍然需要 `v-bind` 来告诉 Vue
+    *
+    * */
+        var componentA = {
+            props:['num'],
+            template:'<div>传入的数字：{{num}}</div>'
+        };
+        var componentB = {
+            props:{
+                bool:{
+                    type:Boolean,
+                    default:false
+                }
+            },
+            template:'<div>传入的一个布尔值：{{bool}}</div>'
+        };
+        var componentC = {
+            props:['arr'],
+            template:'<div>传入的一个数组：<span v-for="item in arr">{{item}}&nbsp;</span></div>'
+        };
+        var componentD = {
+            props:['obj'],
+            template:'<div>传入一个对象：<span>{{obj.title}}:{{obj.content}}</span></div>'
+        };
+        var componentE = {
+            props:['obj1'],
+            template:'<div>传入一个对象的所有属性：<span>{{obj1}}</span></div>'
+        };
+        new Vue({
+            el:'#app3',
+            data:{
+                postsA:{
+                    a:42
+                },
+                postsB:{
+                    a:true
+                },
+                postsC:{
+                    a:[226,221,228]
+                },
+                postsD:{
+                    a:{
+                        title:'标题一',
+                        content:'内容一'
+                    }
+                },
+                postE: {
+                    id: 1,
+                    title: 'My Journey with Vue',
+                    content:'My Journey with Vue'
+                }
+            },
+            components:{
+                'component-a':componentA,
+                'component-b':componentB,
+                'component-c':componentC,
+                'component-d':componentD,
+                'component-e':componentE
+            }
+        })
+</script>

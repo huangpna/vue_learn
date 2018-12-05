@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index2</title>
+</head>
+<body>
+    <div id="app2">
+        <component-a></component-a>
+        <component-b></component-b>
+    </div>
+</body>
+<script src="../js/vue.min.js"></script>
+<script>
+    var componentA = {
+        template:'<div>组件1</div>'
+    };
+    var componentB = {
+        template:'<div>组件2</div>',
+        components:{
+            'component-a':componentA
+        }
+    };
+    new Vue({
+        el:'#app2',
+        components:{
+            'component-b':componentB
+        }
+    })
+</script>
+</html>

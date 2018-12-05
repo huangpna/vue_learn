@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index1</title>
+</head>
+<body>
+    <div id="app1">
+        <blog-post v-bind:post-title="msg"></blog-post>
+    </div>
+</body>
+<script src="../js/vue.min.js"></script>
+<script>
+    Vue.component('blog-post',{
+        props:['postTitle'],
+        template:'<div>{{postTitle}}</div>'
+    });
+    new Vue({
+        el:'#app1',
+        data:{
+            msg:'hello!'
+        }
+    })
+</script>
+</html>

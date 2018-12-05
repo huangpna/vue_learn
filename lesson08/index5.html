@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index5</title>
+</head>
+<body>
+    <div id="app5">
+        <ul-lik :names="text"></ul-lik>
+    </div>
+</body>
+<script src="../js/vue.js"></script>
+<script>
+    function Foo(name) {
+        this.name = name;
+    }
+    Vue.component('ul-lik', {
+        props: {
+            names: Foo
+        },
+        template: '<div>{{names.name}}</div>'
+    });
+    var vm = new Vue({
+        el: '#app5',
+        data: {
+            text: new Foo('zhangsan')
+        }
+    });
+</script>
+</html>

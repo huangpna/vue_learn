@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index2</title>
+</head>
+<body>
+    <div id="app2">
+        <!--静态传值-->
+        <my-component title="hello"></my-component>
+        <!--动态传值-->
+        <my-component v-bind:title="post.title"></my-component>
+    </div>
+</body>
+<script src="../js/vue.min.js"></script>
+<script>
+    Vue.component('my-component',{
+        props:['title'],
+        template:'<div>{{title}}</div>'
+    });
+    new Vue({
+        el:'#app2',
+        data:{
+            post:{
+                title:'标题'
+            }
+        }
+    })
+</script>
+</html>
