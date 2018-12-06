@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index3</title>
+</head>
+<body>
+    <div id="app3">
+        <base-checkbox v-model="cstchecked"></base-checkbox>
+        {{cstchecked}}
+    </div>
+</body>
+<script src="../js/vue.js"></script>
+<script>
+    Vue.component('base-checkbox', {
+        model: {
+            prop: 'checked',//checked与父级cstchecked联动
+            event: 'achange' // 事件名随便定义，反正有了model后就可以触发父组件的事件了
+        },
+        props:{
+            checked:{
+                type:Boolean
+            }
+        },
+        template:'<div>多选框：<input type="checkbox" v-bind:checked="checked" @change="changeV($event)"></div>',
+        methods:{
+            changeV:function (e) {
+                let _this = this;
+                _this.$emit("achange",e.target.checked); //触发父组件的事件，并将值传给 prop: 'checked',从而改变了父级传入的cstchecked
+            }
+        }
+    });
+    new Vue({
+        el:'#app3',
+        data:{
+            cstchecked:false
+        }
+    })
+</script>
+</html>

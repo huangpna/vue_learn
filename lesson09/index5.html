@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index5</title>
+</head>
+<body>
+<div id="app5">
+    <base-input :label="label" v-on:focus="onFocus" v-model="value" :value="value" @input="changr"></base-input>
+    <p>{{value}}</p>
+</div>
+</body>
+<script src="../js/vue.js"></script>
+<script>
+    Vue.component('base-input',{
+        props:['label','value'],
+        template:`<label>{{ label }}<input  v-on="$listeners"  :value="value"  @input="$emit('input', $event)"></label>`
+    });
+    new Vue({
+        el:'#app5',
+        data:{
+            label:'标题',
+            value:''
+        },
+        methods:{
+            changr:function (e) {
+                let _this = this;
+                _this.value = e.target.value;
+            },
+            onFocus:function () {
+                console.log('获取焦点');
+            }
+        }
+    })
+</script>
+</html>

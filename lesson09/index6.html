@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index6</title>
+    <style>
+        #app6>div>p{
+            width:500px;
+            height:200px;
+            border:1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div id="app6">
+        <text-document :show.sync="ase"></text-document>
+        <button @click="openDiv">打开</button>
+    </div>
+</body>
+<script src="../js/vue.js"></script>
+<script>
+    /**
+     * .sync 修饰符
+    * */
+    Vue.component('text-document',{
+        props:['show'],
+        template:'<div v-if="show"><p>默认初始值是{{show}}，所以是显示的<button @click.stop="closeDiv">关闭</button></p></div>',
+        methods:{
+            closeDiv:function () {
+                let _this = this;
+                _this.$emit('update:show', false)
+            }
+        }
+
+    });
+    new Vue({
+        el:'#app6',
+        data:{
+            ase:true
+        },
+        methods:{
+            openDiv:function () {
+               let _this = this;
+               _this.ase = !_this.ase;
+            }
+        }
+    })
+</script>
+</html>

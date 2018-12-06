@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index1</title>
+</head>
+<body>
+    <div id="app1">
+        <my-component v-bind:num="a" v-on:my-event="doSomething"></my-component>  <!--$on(eventName)监听事件-->
+    </div>
+</body>
+<script src="../js/vue.js"></script>
+<script>
+    Vue.component('my-component',{
+        props:['num'],
+        template:'<div><p>{{num}}</p><button v-on:click="changeV">自定义事件触发</button></div>',
+        methods:{
+            changeV:function () {
+                let _this = this;
+                _this.$emit('my-event');<!--$emit(eventName)触发事件-->
+            }
+        }
+    });
+    new Vue({
+        el:'#app1',
+        data:{
+            a:0
+        },
+        methods:{
+            doSomething:function () {
+                let _this = this;
+                _this.a += 1;
+            }
+        }
+    })
+</script>
+</html>

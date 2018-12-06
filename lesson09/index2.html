@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index2</title>
+</head>
+<body>
+<!--自定义组建input-->
+    <div id="app2">
+        <input-price v-bind:value="price" @input="changeV"></input-price>   <!--在自定义input组件的时候，v-model并不能直接实现双向绑定的效果-->
+        <p>{{price}}</p>
+    </div>
+</body>
+<script src="../js/vue.js"></script>
+<script>
+    /**
+     * 自定义一个input组件
+     * */
+    Vue.component('input-price',{
+       props:['value'],
+       template:'<div><input type="text" :value="value" @input="changeV($event)"/></div>',
+       methods:{
+           changeV:function (e) {
+               let _this = this;
+               _this.$emit('input',e.target.value)
+           }
+       } 
+    });
+    new Vue({
+        el:'#app2',
+        data:{
+            price:''
+        },
+        methods:{
+            changeV:function (v) {
+                let _this = this;
+                _this.price = v;
+            }
+        }
+    })
+</script>
+</html>

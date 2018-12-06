@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index4</title>
+</head>
+<body>
+    <div id="app4">
+        <base-input v-bind:label="label" v-model="aaaa" v-on:focus="onFocus"  v-on:blur="onBlur"></base-input>
+        <p>{{aaaa}}</p>
+    </div>
+</body>
+<script src="../js/vue.js"></script>
+<script>
+    Vue.component('base-input',{
+        props:['label','value'],
+       template:`<label>{{ label }}<input   v-bind="$attrs"  v-on="inputListeners" v-bind:value="value"></label>`,
+        computed: {
+            inputListeners: function () {
+                var vm = this
+                // `Object.assign` 将所有的对象合并为一个新对象
+                return Object.assign({},
+                    // 我们从父级添加所有的监听器
+                    this.$listeners,
+                    // 然后我们添加自定义监听器，
+                    // 或覆写一些监听器的行为
+                    {
+                        // 这里确保组件配合 `v-model` 的工作
+                        input: function (event) {
+                            vm.$emit('input', event.target.value)
+                        }
+                    }
+                )
+            }
+        }
+    });
+    new Vue({
+        el:'#app4',
+        data:{
+            label:'标题',
+            value:'',
+            aaaa:''
+        },
+        methods:{
+            onFocus:function () {
+                console.log('获取焦点');
+            },
+            onBlur:function () {
+                console.log('失去焦点');
+            }
+        }
+    })
+</script>
+</html>
