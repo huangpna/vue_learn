@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index4</title>
+    <style>
+        .container{
+            width:600px;
+            height:500px;
+            border:1px solid red;
+        }
+    </style>
+</head>
+<!--定义插槽的默认内容-->
+<body>
+<div id="app4">
+    <default-con-slot></default-con-slot>
+</div>
+</body>
+<script src="../js/vue.js"></script>
+<script>
+    var defaultConSlot = {
+        template:`
+                <div class="container">
+                       <slot>默认插槽内容</slot>
+                </div>
+        `
+    };
+    new Vue({
+        el:'#app4',
+        components:{
+            'default-con-slot':defaultConSlot
+        }
+    })
+</script>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index1</title>
+</head>
+<body>
+<!--插槽-->
+<div id="app1">
+    <navigation-link>
+        <font-awesome-icon></font-awesome-icon>
+    </navigation-link>
+</div>
+</body>
+<script src="../js/vue.js"></script>
+<script>
+    Vue.component('navigation-link',{
+        template:'<div><a href="https://www.baidu.com">百度一下</a><slot></slot></div>'
+    });
+    Vue.component('font-awesome-icon',{
+        template:'<span>另一个组件</span>'
+    });
+    new Vue({
+        el:'#app1'
+    })
+</script>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index3</title>
+</head>
+<body>
+<div id="app3">
+    <group-assembly-temp>
+        <h1 slot="header">Here might be a page title</h1>
+
+        <p>A paragraph for the main content.-----默认插槽</p>
+        <p>And another one.-----默认插槽</p>
+        <p>Here's some contact info-----默认插槽</p>
+
+        <p slot="footer">Here's some contact info</p>
+    </group-assembly-temp>
+</div>
+</body>
+<script src="../js/vue.js"></script>
+<script>
+    var groupAssemblyTemp = {
+        //定义一个未命名插槽
+        template:`<div class="container">
+                        <header>
+                            <slot name="header"></slot>
+                        </header>
+                        <main>
+                            <slot></slot>
+                        </main>
+                        <footer>
+                            <slot name="footer"></slot>
+                        </footer>
+                  </div>`
+    };
+    new Vue({
+        el:'#app3',
+        components:{
+            'group-assembly-temp':groupAssemblyTemp
+        }
+    })
+</script>
+</html>

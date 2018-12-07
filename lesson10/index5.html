@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index5</title>
+    <style>
+        li{
+            list-style:none;
+        }
+    </style>
+</head>
+<body>
+    <div id="app5">
+        <blog-test v-bind:todos="todos">
+            <template slot-scope="list">
+                    {{list}}
+            </template>
+        </blog-test>
+    </div>
+</body>
+<script src="../js/vue.js"></script>
+<script>
+    /**
+     * 作用域插槽
+     * */
+    var blogTest = {
+          props:['todos'],
+          template:`
+                  <ul>
+                      <li
+                        v-for="todo in todos"
+                        v-bind:key="todo.id"
+                      >
+                        <slot :arr="todo"></slot>
+                      </li>
+                  </ul>
+          `
+    };
+    new Vue({
+        el:'#app5',
+        data:{
+            todos:[
+                {id:1,name:'孙悟空'},
+                {id:2,name:'猪八戒'},
+                {id:3,name:'沙和尚'},
+                {id:4,name:'唐僧'},
+                {id:5,name:'小白龙'}
+            ]
+        },
+        components:{
+            'blog-test':blogTest
+        }
+    })
+</script>
+</html>
