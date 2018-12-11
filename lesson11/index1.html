@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index1</title>
+    <style>
+        div,li,ul,p{
+            margin:0;
+            padding:0;
+        }
+        li{
+            list-style:none;
+        }
+        #app1{
+            overflow: hidden;
+        }
+        #app1>div>ul{
+            float:left;
+        }
+        #app1>div>ul>li{
+            width:80px;
+            height:100px;
+            line-height:100px;
+            cursor: pointer;
+            text-align:center;
+        }
+        #app1>div>ul>li:first-child{
+            background-color: #ff4225;
+        }
+        #app1>div>ul>li:last-child{
+            background-color: royalblue;
+        }
+        #app1>div>div{
+            border:1px solid red;
+            width:200px;
+            height:200px;
+            float:left;
+        }
+        #app1>div{
+            width:300px;
+            margin:0 auto;
+        }
+        #app1>div>div>div{
+            font-size:16px;
+            text-align:center;
+            line-height:200px;
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <div id="app1">
+        <div>
+
+            <ul>
+                <li v-for="(item,index) in navs" :key="index" @click="tab(item)">{{item}}</li>
+            </ul>
+            <div>
+                <keep-alive>
+                    <component :is="currentTabComponent"></component>
+                </keep-alive>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../js/vue.js"></script>
+<script>
+    var myHome = {
+      template:'<div>include: 字符串或正则表达式。只有匹配的组件会被缓存。</div>'
+    };
+    var myPosts = {
+        template:'<div><label>输入框:</label><input type="text"/></div>'
+    };
+    new Vue({
+        el:'#app1',
+        data:{
+          currentTab:'Home',
+          navs:['Home','Posts']
+        },
+        components:{
+            'my-home':myHome,
+            'my-posts':myPosts
+        },
+        methods:{
+            tab:function (v) {
+                let _this = this;
+                _this.currentTab = v;
+            }
+        },
+        computed:{
+            currentTabComponent:function () {
+                let _this = this;
+                return 'my-'+ _this.currentTab.toLowerCase();
+            }
+        }
+    })
+</script>
+</html>
