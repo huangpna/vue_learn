@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index1</title>
+</head>
+<body>
+    <div id="app1">
+        <h1>{{num1 | capitalize('12','5')}}</h1>
+    </div>
+</body>
+<script src="../js/vue.js"></script>
+<script>
+    /**
+     *
+     * 局部过滤器（挂载到当前实例上）
+     * */
+    var vm = new Vue({
+        el:'#app1',
+        data:{
+            num1:9,
+            num2:12
+        },
+        filters:{
+            capitalize:function (n,a,b) {
+                if(n < 10){
+                    return n+a+"当前num1小于10";   //912
+                }else{
+                    return n+b+"当前num2大于10";    //1250
+                }
+            }
+        }
+    })
+</script>
+</html>
