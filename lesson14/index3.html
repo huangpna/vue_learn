@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index3</title>
+    <style>
+        #app3>p>a{
+            padding:5px 10px;
+        }
+        .router-link-exact-active{
+            background-color: darkslateblue;
+            border-radius: 4%;
+            color:#FFF;
+        }
+    </style>
+</head>
+<body>
+    <div id="app3">
+        <p>
+            <router-link :to="{name:'foo',params:{userId:123}}">/user/foo</router-link>
+            <router-link to="/user/foo/profile">/user/foo/profile</router-link>
+            <router-link to="/user/foo/posts">/user/foo/posts</router-link>
+        </p>
+        <router-view></router-view>
+    </div>
+</body>
+<script src="../js/vue.js"></script>
+<script src="../js/vue-router.js"></script>
+<script>
+    /*
+    * 嵌套路由/路由传值/路由命名
+    * */
+    const user = {
+        template: `
+        <div>
+            <h1>User {{$route.params.id}}</h1>
+            <router-view></router-view>
+        </div>
+        `
+    };
+    const main = {
+        template: '<div><button @click="back">返回</button>已跳转到当前页面</div>',
+        methods:{
+            back:function () {
+                router.go(-1);
+            }
+        }
+    };
+    const userHome = {
+        template: `<div>userHome</div>`,
+        created:function () {
+            console.log(this.$route.params);
+        }
+    };
+    const userProfile = {
+        template: `<div>userProfile<button v-on:click="send">点击跳转</button></div>`,
+        methods:{
+            send:function () {
+                router.push('main');
+            }
+        }
+    };
+    const userPosts = { template: `<div>userPosts</div>`};
+    const routes = [
+        {
+            path: '/user/foo',
+            component: user,
+            children: [
+                {
+                    path: '',
+                    name:'foo',
+                    component: userHome
+                },
+                {
+                    path: 'profile',
+                    component: userProfile
+                },
+                {
+                    path: 'posts',
+                    component: userPosts
+                },
+                {
+                    path: 'main',
+                    component: main
+                }
+            ]
+        }
+    ];
+    const router = new VueRouter({
+        routes
+    });
+    const app3 = new Vue({
+        router
+    }).$mount('#app3');
+</script>
+</html>

@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99045da8-6598-4cb6-944a-bce9da30b15a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/vue-router.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lesson14/index1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lesson14/index2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lesson14/index3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lesson14/index4.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -18,11 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index1.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lesson14/index1.html">
+      <file leaf-file-name="index4.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lesson14/index4.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="36" column="7" lean-forward="true" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
+            <state relative-caret-position="561">
+              <caret line="93" column="26" lean-forward="true" selection-start-line="93" selection-start-column="26" selection-end-line="93" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -49,9 +50,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/lesson05/index1.html" />
-        <option value="$PROJECT_DIR$/lesson01/index2.html" />
-        <option value="$PROJECT_DIR$/lesson01/index1.html" />
         <option value="$PROJECT_DIR$/lesson01/index3.html" />
         <option value="$PROJECT_DIR$/lesson01/index4.html" />
         <option value="$PROJECT_DIR$/lesson01/index5.html" />
@@ -100,6 +98,9 @@
         <option value="$PROJECT_DIR$/lesson13/index1.html" />
         <option value="$PROJECT_DIR$/lesson13/index2.html" />
         <option value="$PROJECT_DIR$/lesson14/index1.html" />
+        <option value="$PROJECT_DIR$/lesson14/index2.html" />
+        <option value="$PROJECT_DIR$/lesson14/index3.html" />
+        <option value="$PROJECT_DIR$/lesson14/index4.html" />
       </list>
     </option>
   </component>
@@ -109,7 +110,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="180" />
     <option name="y" value="88" />
     <option name="width" value="1400" />
@@ -197,15 +198,15 @@
       <workItem from="1545722458740" duration="4482000" />
       <workItem from="1545727972974" duration="896000" />
       <workItem from="1545729239080" duration="1282000" />
-      <workItem from="1546845937189" duration="2356000" />
+      <workItem from="1546845937189" duration="14553000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="148565000" />
+    <option name="totallyTimeSpent" value="160762000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18354431" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -237,21 +238,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lesson04/index1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="7" lean-forward="true" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/111.html" />
-    <entry file="file://$PROJECT_DIR$/lesson04/index11.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="37" lean-forward="false" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lesson04/index10.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -567,8 +553,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lesson14/index1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="7" lean-forward="true" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="36" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lesson14/index2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="65" lean-forward="true" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lesson14/index3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="867">
+          <caret line="51" column="35" lean-forward="false" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="35" />
+          <folding>
+            <marker date="1546933004529" expanded="true" signature="859:961" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lesson14/index4.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="93" column="26" lean-forward="true" selection-start-line="93" selection-start-column="26" selection-end-line="93" selection-end-column="26" />
           <folding />
         </state>
       </provider>

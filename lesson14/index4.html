@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index4</title>
+    <style>
+        #app4>div:last-child>div:first-child{
+            width:12%;
+        }
+        #app4>div:last-child>div:last-child{
+            width:88%;
+        }
+        #app4>div:last-child>div{
+            float:left;
+        }
+        #app4>div:last-child{
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div id="app4">
+        <div>
+            <h1>头部内容</h1>
+        </div>
+        <div>
+            <!--侧边导航-->
+            <div>
+                <ul>
+                    <li>
+                        <router-link :to="{path:'/view1',query:{id:1}}">
+                            <h3>
+                                导航一
+                            </h3>
+                        </router-link>
+                    </li>
+                    <li>
+                        <router-link :to="{path:'/view2',query:{id:2}}">
+                            <h3>
+                                导航二
+                            </h3>
+                        </router-link>
+                    </li>
+                    <li>
+                        <router-link :to="{path:'/view3',query:{id:3}}">
+                            <h3>
+                                导航三
+                            </h3>
+                        </router-link>
+                    </li>
+                    <li>
+                        <router-link :to="{path:'/view4',query:{id:4}}">
+                            <h3>
+                                导航四
+                            </h3>
+                        </router-link>
+                    </li>
+                </ul>
+            </div>
+            <!--主内容-->
+            <router-view></router-view>
+            <router-view name="a"></router-view>
+            <router-view name="b"></router-view>
+        </div>
+    </div>
+</body>
+<script src="../js/vue.js"></script>
+<script src="../js/vue-router.js"></script>
+<script>
+    /*
+    * 命名视图
+    *
+    * */
+    const main = {
+        template:`<div><h1>主体内容{{$route.query.id}}</h1></div>`,
+    };
+    const con1 = {
+        template:`<p>今天天气真好！</p>`
+    };
+    const con2 = {
+        template:`<p>万里无云</p>`
+    };
+    const routes = [
+        {
+            path: '/view1',
+            components:{
+                default:main,
+                a: con1,
+                b: con2
+            }
+        },
+        {
+            path: '/view2',
+            component:main
+        },
+        {
+            path: '/view3',
+            component:main
+        },
+        {
+            path: '/view4',
+            component:main
+        }
+    ];
+    const router = new VueRouter({
+        routes
+    });
+    const app4 = new Vue({
+        router
+    }).$mount('#app4');
+</script>
+</html>
