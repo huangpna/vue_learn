@@ -18,12 +18,22 @@
 <script>
     /*
     *动态路由匹配
-    *
     * */
-    const user = { template: '<div>{{$route.params.id}}</div>' };
+    //方法一
+    const user = {
+        template: '<div>{{$route.params.id}}</div>'
+    };
     const routes = [
         { path: '/user/:id', component: user}
     ];
+    //方法二 去耦
+//    const user = {
+//        props:['id'],
+//        template: '<div>{{id}}</div>'
+//    };
+//    const routes = [
+//        { path: '/user/:id', component: user,props: true}
+//    ];
     const router = new VueRouter({
         routes
     });
