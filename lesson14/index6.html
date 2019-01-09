@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index6</title>
+</head>
+<body>
+    <div id="app6">
+        <router-view></router-view>
+    </div>
+</body>
+<script src="../js/vue.min.js"></script>
+<script src="../js/vue-router.js"></script>
+<script>
+    const testView = {
+        template:'<div><h1>HELLO world</h1></div>'
+    };
+    const test1View = {
+        template:'<div><h1>HELLO world11111111111111</h1></div>'
+    };
+    const router = new VueRouter({
+        routes:[{
+            path:'/a',
+            redirect: '/b',
+            component:testView
+        },{
+            path:'/b',
+            component:test1View
+        }]
+    });
+    router.push('/a');
+    new Vue({
+        router,
+        el:'#app6'
+    });
+</script>
+
+</html>
