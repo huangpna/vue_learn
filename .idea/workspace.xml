@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99045da8-6598-4cb6-944a-bce9da30b15a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lesson14/index2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lesson14/index3.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lesson14/index4.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lesson14/index5.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -19,12 +17,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index4.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lesson14/index4.html">
+      <file leaf-file-name="index5.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lesson14/index5.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="93" column="26" lean-forward="true" selection-start-line="93" selection-start-column="26" selection-end-line="93" selection-end-column="26" />
-              <folding />
+            <state relative-caret-position="612">
+              <caret line="36" column="17" lean-forward="true" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
+              <folding>
+                <marker date="1547002000930" expanded="true" signature="421:592" ph="..." />
+                <marker date="1547002000930" expanded="true" signature="651:865" ph="..." />
+                <marker date="1547002000930" expanded="true" signature="986:1053" ph="..." />
+                <marker date="1547002000930" expanded="true" signature="1111:1184" ph="..." />
+                <marker date="1547002000930" expanded="true" signature="1249:1331" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -42,6 +46,7 @@
     <findStrings>
       <find>toggle</find>
       <find>isSeleted</find>
+      <find>UserSettingsNav</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -50,7 +55,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/lesson01/index3.html" />
         <option value="$PROJECT_DIR$/lesson01/index4.html" />
         <option value="$PROJECT_DIR$/lesson01/index5.html" />
         <option value="$PROJECT_DIR$/lesson01/index6.html" />
@@ -101,6 +105,7 @@
         <option value="$PROJECT_DIR$/lesson14/index2.html" />
         <option value="$PROJECT_DIR$/lesson14/index3.html" />
         <option value="$PROJECT_DIR$/lesson14/index4.html" />
+        <option value="$PROJECT_DIR$/lesson14/index5.html" />
       </list>
     </option>
   </component>
@@ -198,12 +203,12 @@
       <workItem from="1545722458740" duration="4482000" />
       <workItem from="1545727972974" duration="896000" />
       <workItem from="1545729239080" duration="1282000" />
-      <workItem from="1546845937189" duration="14553000" />
+      <workItem from="1546845937189" duration="18021000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="160762000" />
+    <option name="totallyTimeSpent" value="164230000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -238,13 +243,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lesson04/index10.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="7" lean-forward="true" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lesson04/index9.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="547">
@@ -579,9 +577,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lesson14/index4.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="93" column="26" lean-forward="true" selection-start-line="93" selection-start-column="26" selection-end-line="93" selection-end-column="26" />
+        <state relative-caret-position="394">
+          <caret line="89" column="13" lean-forward="true" selection-start-line="89" selection-start-column="13" selection-end-line="89" selection-end-column="13" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lesson14/index5.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="17" lean-forward="true" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
+          <folding>
+            <marker date="1547002000930" expanded="true" signature="421:592" ph="..." />
+            <marker date="1547002000930" expanded="true" signature="651:865" ph="..." />
+            <marker date="1547002000930" expanded="true" signature="986:1053" ph="..." />
+            <marker date="1547002000930" expanded="true" signature="1111:1184" ph="..." />
+            <marker date="1547002000930" expanded="true" signature="1249:1331" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

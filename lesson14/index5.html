@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index5</title>
+</head>
+<body>
+    <div id="app5">
+        <h1>Nested Named Views</h1>
+        <router-view></router-view>
+    </div>
+</body>
+<script src="../js/vue.min.js"></script>
+<script src="../js/vue-router.js"></script>
+<script>
+    /*
+    *   简单的头部+侧栏切换效果
+    *
+    * */
+    const UserSettingsNav = {
+        template:
+            `<div>
+                   <router-link to="/settings/emails">emails</router-link>
+                   <router-link to="/settings/profile">profile</router-link>
+            </div>`
+    };
+    const UserSettings = {
+        template:`<div>
+                    <h2>User Settings</h2>
+                    <UserSettingsNav/>
+                    <router-view></router-view>
+                    <router-view name="con"></router-view>
+                  </div>`,
+        components:{UserSettingsNav}
+    };
+    const UserEmailsSubscriptions = {
+        template:
+            `<div>
+                   <h2>Email Subscriptions</h2>
+            </div>`
+    };
+    const UserProfile = {
+        template:`<div>
+                       <h2>Edit your profile</h2>
+                </div>`
+    };
+    const UserProfilePreview = {
+        template:`<div>
+                        <h2>Preview of your profile</h2>
+                  </div>`
+    };
+    const router = new VueRouter({
+        routes:[
+            {
+                path:'/settings',
+                component:UserSettings,
+                children:[{
+                    path:'emails',
+                    component:UserEmailsSubscriptions
+                },{
+                    path:'profile',
+                    name:'con',
+                    components:{
+                        default:UserProfile,
+                        con:UserProfilePreview
+                    }
+                }]
+            }
+        ]
+    });
+    router.push('/settings/emails');
+    new Vue({
+        router,
+        el:'#app5'
+    })
+</script>
+</html>
