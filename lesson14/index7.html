@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>index6</title>
+    <title>index7</title>
 </head>
 <body>
-    <div id="app6">
-        <router-view></router-view>
-    </div>
+<div id="app7">
+    <router-view></router-view>
+</div>
 </body>
 <script src="../js/vue.min.js"></script>
 <script src="../js/vue-router.js"></script>
@@ -24,17 +24,18 @@
     const router = new VueRouter({
         routes:[{
             path:'/a',
-            redirect: '/b',
+            redirect:{name:'foo'},
             component:testView
         },{
             path:'/b',
+            name:'foo',
             component:test1View
         }]
     });
     router.push('/a');
     new Vue({
         router,
-        el:'#app6'
+        el:'#app7'
     });
 </script>
 
