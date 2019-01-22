@@ -2,21 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99045da8-6598-4cb6-944a-bce9da30b15a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/lesson04/index1.html" afterPath="$PROJECT_DIR$/example/lesson04/index1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/lesson04/index10.html" afterPath="$PROJECT_DIR$/example/lesson04/index10.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/lesson04/index11.html" afterPath="$PROJECT_DIR$/example/lesson04/index11.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/lesson04/index12.html" afterPath="$PROJECT_DIR$/example/lesson04/index12.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/lesson04/index13.html" afterPath="$PROJECT_DIR$/example/lesson04/index13.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/lesson04/index14.html" afterPath="$PROJECT_DIR$/example/lesson04/index14.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/lesson04/index2.html" afterPath="$PROJECT_DIR$/example/lesson04/index2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/lesson04/index3.html" afterPath="$PROJECT_DIR$/example/lesson04/index3.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/lesson04/index4.html" afterPath="$PROJECT_DIR$/example/lesson04/index4.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/lesson04/index5.html" afterPath="$PROJECT_DIR$/example/lesson04/index5.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/lesson04/index6.html" afterPath="$PROJECT_DIR$/example/lesson04/index6.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/lesson04/index7.html" afterPath="$PROJECT_DIR$/example/lesson04/index7.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/lesson04/index8.html" afterPath="$PROJECT_DIR$/example/lesson04/index8.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/lesson04/index9.html" afterPath="$PROJECT_DIR$/example/lesson04/index9.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/lesson05/index1.html" afterPath="$PROJECT_DIR$/example/lesson05/index1.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/lesson05/index2.html" afterPath="$PROJECT_DIR$/example/lesson05/index2.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -51,8 +38,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/lesson09/index5.html" />
-        <option value="$PROJECT_DIR$/lesson09/index6.html" />
         <option value="$PROJECT_DIR$/lesson10/index1.html" />
         <option value="$PROJECT_DIR$/lesson10/index2.html" />
         <option value="$PROJECT_DIR$/lesson10/index3.html" />
@@ -102,6 +87,8 @@
         <option value="$PROJECT_DIR$/example/lesson04/index12.html" />
         <option value="$PROJECT_DIR$/example/lesson04/index13.html" />
         <option value="$PROJECT_DIR$/example/lesson04/index14.html" />
+        <option value="$PROJECT_DIR$/example/lesson05/index1.html" />
+        <option value="$PROJECT_DIR$/example/lesson05/index2.html" />
       </list>
     </option>
   </component>
@@ -149,19 +136,7 @@
               <item name="vue_learn" type="b2602c69:ProjectViewProjectNode" />
               <item name="vue_learn" type="462c0819:PsiDirectoryNode" />
               <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="lesson02" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vue_learn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vue_learn" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="lesson03" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vue_learn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vue_learn" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="lesson04" type="462c0819:PsiDirectoryNode" />
+              <item name="lesson05" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -224,12 +199,12 @@
       <workItem from="1545727972974" duration="896000" />
       <workItem from="1545729239080" duration="1282000" />
       <workItem from="1546845937189" duration="22747000" />
-      <workItem from="1548062977546" duration="4475000" />
+      <workItem from="1548062977546" duration="4535000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="173431000" />
+    <option name="totallyTimeSpent" value="173491000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -263,22 +238,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/example/lesson09/index6.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="27" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/example/lesson10/index1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="24" lean-forward="false" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/example/lesson10/index2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -582,14 +541,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/example/lesson04/index1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="19" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/example/lesson04/index2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -690,6 +641,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="18" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/lesson04/index1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="19" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/lesson05/index1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/lesson05/index2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
           <folding />
         </state>
       </provider>
