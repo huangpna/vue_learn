@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99045da8-6598-4cb6-944a-bce9da30b15a" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/vue-router.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/vue.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/vue.min.js" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/vue-router.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/vue.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/vue.min.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -146,6 +146,7 @@
       <recent name="D:\vue_learn\js" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\vue_learn" />
       <recent name="D:\vue_learn\js" />
       <recent name="D:\vue_learn\lesson01" />
     </key>
@@ -186,12 +187,12 @@
       <workItem from="1545727972974" duration="896000" />
       <workItem from="1545729239080" duration="1282000" />
       <workItem from="1546845937189" duration="22747000" />
-      <workItem from="1548062977546" duration="2586000" />
+      <workItem from="1548062977546" duration="2688000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="171542000" />
+    <option name="totallyTimeSpent" value="171644000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -225,14 +226,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lesson04/index2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="18" lean-forward="false" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lesson04/index3.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -659,6 +652,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="14" lean-forward="true" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/vue.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
           <folding />
         </state>
       </provider>
