@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99045da8-6598-4cb6-944a-bce9da30b15a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/lesson14/index1.html" afterPath="$PROJECT_DIR$/example/lesson14/index1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/lesson14/index2.html" afterPath="$PROJECT_DIR$/example/lesson14/index2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/lesson14/index3.html" afterPath="$PROJECT_DIR$/example/lesson14/index3.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/lesson14/index4.html" afterPath="$PROJECT_DIR$/example/lesson14/index4.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/lesson14/index5.html" afterPath="$PROJECT_DIR$/example/lesson14/index5.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/lesson14/index6.html" afterPath="$PROJECT_DIR$/example/lesson14/index6.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/lesson14/index7.html" afterPath="$PROJECT_DIR$/example/lesson14/index7.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/lesson14/index8.html" afterPath="$PROJECT_DIR$/example/lesson14/index8.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/example/js/vue-router.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/example/js/vue.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/example/js/vue.min.js" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -138,24 +133,6 @@
               <item name="vue_learn" type="462c0819:PsiDirectoryNode" />
               <item name="example" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="vue_learn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vue_learn" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="lesson11" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vue_learn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vue_learn" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="lesson13" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vue_learn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vue_learn" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="lesson14" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -217,12 +194,12 @@
       <workItem from="1545727972974" duration="896000" />
       <workItem from="1545729239080" duration="1282000" />
       <workItem from="1546845937189" duration="22747000" />
-      <workItem from="1548062977546" duration="5077000" />
+      <workItem from="1548062977546" duration="5188000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="174033000" />
+    <option name="totallyTimeSpent" value="174144000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
