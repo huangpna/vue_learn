@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99045da8-6598-4cb6-944a-bce9da30b15a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/lesson07/index1.html" afterPath="$PROJECT_DIR$/example/lesson07/index1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/lesson07/index2.html" afterPath="$PROJECT_DIR$/example/lesson07/index2.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/lesson08/index1.html" afterPath="$PROJECT_DIR$/example/lesson08/index1.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/lesson08/index2.html" afterPath="$PROJECT_DIR$/example/lesson08/index2.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/lesson08/index3.html" afterPath="$PROJECT_DIR$/example/lesson08/index3.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/lesson08/index4.html" afterPath="$PROJECT_DIR$/example/lesson08/index4.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/lesson08/index5.html" afterPath="$PROJECT_DIR$/example/lesson08/index5.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,7 +21,7 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="index1.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/example/lesson07/index1.html">
+        <entry file="file://$PROJECT_DIR$/example/lesson08/index1.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
               <caret line="4" column="27" lean-forward="false" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
@@ -27,8 +30,40 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index2.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/example/lesson07/index2.html">
+      <file leaf-file-name="index2.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/example/lesson08/index2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="19" lean-forward="true" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index3.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/example/lesson08/index3.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="27" lean-forward="false" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+              <folding>
+                <marker date="1548127125777" expanded="true" signature="1730:1736" ph=" " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index4.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/example/lesson08/index4.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="27" lean-forward="false" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index5.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/example/lesson08/index5.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
               <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="26" />
@@ -59,11 +94,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/lesson13/index1.html" />
-        <option value="$PROJECT_DIR$/lesson14/index1.html" />
-        <option value="$PROJECT_DIR$/lesson14/index2.html" />
-        <option value="$PROJECT_DIR$/lesson14/index3.html" />
-        <option value="$PROJECT_DIR$/lesson14/index4.html" />
         <option value="$PROJECT_DIR$/lesson14/index5.html" />
         <option value="$PROJECT_DIR$/lesson14/index6.html" />
         <option value="$PROJECT_DIR$/lesson14/index7.html" />
@@ -110,6 +140,11 @@
         <option value="$PROJECT_DIR$/example/lesson06/index5.html" />
         <option value="$PROJECT_DIR$/example/lesson07/index1.html" />
         <option value="$PROJECT_DIR$/example/lesson07/index2.html" />
+        <option value="$PROJECT_DIR$/example/lesson08/index1.html" />
+        <option value="$PROJECT_DIR$/example/lesson08/index2.html" />
+        <option value="$PROJECT_DIR$/example/lesson08/index3.html" />
+        <option value="$PROJECT_DIR$/example/lesson08/index4.html" />
+        <option value="$PROJECT_DIR$/example/lesson08/index5.html" />
       </list>
     </option>
   </component>
@@ -157,7 +192,7 @@
               <item name="vue_learn" type="b2602c69:ProjectViewProjectNode" />
               <item name="vue_learn" type="462c0819:PsiDirectoryNode" />
               <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="lesson07" type="462c0819:PsiDirectoryNode" />
+              <item name="lesson08" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -220,12 +255,12 @@
       <workItem from="1545727972974" duration="896000" />
       <workItem from="1545729239080" duration="1282000" />
       <workItem from="1546845937189" duration="22747000" />
-      <workItem from="1548062977546" duration="4650000" />
+      <workItem from="1548062977546" duration="4711000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="173606000" />
+    <option name="totallyTimeSpent" value="173667000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -260,54 +295,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/example/lesson14/index3.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-          <folding>
-            <marker date="1548064358843" expanded="true" signature="868:970" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/example/lesson14/index4.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/example/lesson14/index5.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-442">
-          <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-          <folding>
-            <marker date="1548064358865" expanded="true" signature="430:601" ph="..." />
-            <marker date="1548064358865" expanded="true" signature="660:874" ph="..." />
-            <marker date="1548064358865" expanded="true" signature="995:1062" ph="..." />
-            <marker date="1548064358865" expanded="true" signature="1120:1193" ph="..." />
-            <marker date="1548064358865" expanded="true" signature="1258:1340" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/example/lesson14/index6.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/example/lesson14/index7.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/example/lesson14/index8.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -665,6 +652,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/example/lesson07/index2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/example/lesson07/index1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -673,7 +668,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/example/lesson07/index2.html">
+    <entry file="file://$PROJECT_DIR$/example/lesson08/index1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="27" lean-forward="false" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/lesson08/index2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="19" lean-forward="true" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/lesson08/index3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="27" lean-forward="false" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+          <folding>
+            <marker date="1548127125777" expanded="true" signature="1730:1736" ph=" " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/lesson08/index4.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="27" lean-forward="false" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/lesson08/index5.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="26" />
