@@ -1,23 +1,25 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <child v-bind:message="parentMsg" v-on:listenToChildEvent="showMsgFromChild"></child>
   </div>
 </template>
 
 <script>
+  import child from './components/Child.vue'
 export default {
-  name: 'App'
+  name: 'App',
+  data(){
+    return{
+      parentMsg:"hello,hello"
+    }
+  },
+  methods:{
+    showMsgFromChild:function (data) {
+      console.log(data);
+    }
+  },
+  components:{
+    child
+  }
 }
 </script>
-
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
