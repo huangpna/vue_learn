@@ -1,11 +1,15 @@
 <template>
   <div id="app">
     <child v-bind:message="parentMsg" v-on:listenToChildEvent="showMsgFromChild"></child>
+    <componentsA></componentsA>
+    <componentsB></componentsB>
   </div>
 </template>
 
 <script>
   import child from './components/Child.vue'
+  import componentsA from './components/componentsA.vue'
+  import componentsB from './components/componentsB.vue'
 export default {
   name: 'App',
   data(){
@@ -19,7 +23,9 @@ export default {
     }
   },
   components:{
-    child
+    child,
+    componentsA,
+    componentsB
   }
 }
 </script>
